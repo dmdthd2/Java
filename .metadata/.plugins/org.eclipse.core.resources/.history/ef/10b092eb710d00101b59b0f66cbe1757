@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Hello {
+	static int a;
+	int b;
+
+	public static void main(String[] args) {
+		Hello c = new Hello();
+		Hello d= new Hello();
+		c.b=10;
+		d.b=20;
+		System.out.println(c.b+","+d.b);
+		
+		
+		
+		Hello a = new Hello();
+		Hello b= new Hello();
+		
+		a.a=50;
+		b.a=100;
+		System.out.println(a.a+","+b.a);
+		
+
+	}
+}

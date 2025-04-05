@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class HelloJava {
+	public static void main(String[] args) {
+		Random rn = new Random();
+		int a = rn.nextInt(10)+1;
+		
+		switch(a) {
+		case 1:
+		case 2:
+		case 3:System.out.println("아직 작은 놈들");
+		break;
+		
+			
+		}
+		
+	}
+
+}

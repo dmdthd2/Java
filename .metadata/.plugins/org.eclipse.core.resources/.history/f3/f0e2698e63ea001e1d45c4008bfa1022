@@ -1,0 +1,30 @@
+import java.util.*;
+public class 배열크기의난수홀짝합과평균 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+        int r;
+        System.out.println("숫자 개수 몇개 생성할 거냐.");
+     Scanner sc = new Scanner(System.in);
+     n=sc.nextInt();
+     Random rd = new Random();
+     int[] ar = new int[n];
+     int h=0, ja=0;
+     
+    
+     System.out.print("배열 내용: ");
+     for(int i=0;i<n;i++) {
+        System.out.print(ar[i]+" ");
+        if(ar[i]%2==0)
+           ja+=ar[i];
+        else
+           h+=ar[i];
+     }
+     
+     System.out.println("\n홀수의 합: "+h);
+     System.out.println("짝수의 합: "+ja);
+     System.out.println("평균: "+(ja+h)/(double)n);
+	}
+
+}

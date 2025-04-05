@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class HelloJava {
+	public static void main(String[] args) {
+		Random rn = new Random();
+		int a = rn.nextInt(100)+1;
+		
+		switch(a) {
+		
+			
+		}
+		
+	}
+
+}

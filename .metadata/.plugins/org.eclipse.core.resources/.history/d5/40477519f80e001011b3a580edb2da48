@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Star05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("몇 줄짜리 별을 만들까요?");
+        int a = sc.nextInt();
+        
+        int ms = (a + 1) / 2; // 중간 줄 계산 (전체 줄수의 절반)
+
+        for (int i = 1; i <= a; i++) {
+            if (i < ms) {
+                // 중간 전까지는 공백을 출력하고 별을 한 개만 출력
+                for (int j = 1; j <= ms - i; j++) {
+                    System.out.print(" ");  // 왼쪽 공백
+                }
+                System.out.print("*");  // 별을 한 개 출력
+            } 
+            else if (i == ms) {
+                // 중간 줄에서는 별을 a개 출력
+                for (int j = 1; j <= a; j++) {
+                    System.out.print("*");
+                }
+            } 
+            else {
+                // 중간 이후 줄에서는 공백을 (a + 1) / 2 만큼 출력하고 별을 찍음
+                for (int j =a-ms; j <= (a + 1) / 2; j++) {
+                    if(j==ms) {
+                    	System.out.print(" ");  // 공백을 (a + 1) / 2 만큼 출력
+                }
+                    else if(j==ms-1||j==ms+1) {
+                    	System.out.print("*");
+                    }
+                  // 별을 하나 출력
+            }
+
+            System.out.println();  // 각 줄의 끝에서 줄 바꿈
+        }
+    }
+}}

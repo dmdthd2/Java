@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Star05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("몇줄짜리 별을 만들까요?");
+        int a= sc.nextInt();
+        
+        for(int i =1; i<=a; i++) {
+        		System.out.print(" ");
+        	 if (i==(a+1)*0.5) {
+        		System.out.print("*");
+        	}
+        	}
+        
+        
+    }
+}

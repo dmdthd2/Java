@@ -1,0 +1,68 @@
+import java.util.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num1;
+	      int num2;
+	      int nc1=0;
+	      int nc2=0;
+	      int[] ar= new int[20];
+	      int[]arr = new int[20];
+	      
+	      
+	      System.out.println("두 수를 입력하세요");
+	      Scanner sc = new Scanner(System.in);
+	      num1= sc.nextInt();
+	      num2 = sc. nextInt();
+	      
+	      for(int i=1; i<= num1; i++) {
+	         if(num1%i==0) {
+	            ar[nc1]=i;
+	            nc1++;}
+	      }
+	            
+	      for(int i=1; i<= num2; i++) {
+	         if(num2%i==0) {
+	            arr[nc2]=i;
+	            nc2++;
+	               }
+	      }
+	      int gys = 1; 
+	       for (int i = 0; i < nc1; i++) {
+	           for (int j = 0; j < nc2; j++) {
+	               if (ar[i] == arr[j] && ar[i] > gys) { 
+	                   gys = ar[i];
+	               }
+	           }
+	       }
+	       System.out.println("최대공약수는 "+gys);
+		
+		
+
+
+		
+		
+		
+		
+		
+		  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

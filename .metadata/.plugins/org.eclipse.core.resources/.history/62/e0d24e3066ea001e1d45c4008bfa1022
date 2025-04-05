@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random rnd = new Random();
+		int n;
+		int sum=0;
+		int ag=0;
+		ag=sum/25;
+		
+
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				n = rnd.nextInt(40) + 60;
+				System.out.print(n + " ");
+				sum+=n;
+			}
+			System.out.println();
+		}
+		System.out.print("합계: "+sum+"   평균: "+(double)ag);
+
+	}
+}

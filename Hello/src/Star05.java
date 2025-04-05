@@ -9,12 +9,8 @@ public class Star05 {
 
 		while (help_Me) {
 			Scanner sc = new Scanner(System.in);
-			System.out.println("해치웠나?");
-			System.out.println("된 건가?");
-			System.out.println("이그놀 메타데이터");
-			System.out.println("메타데이터가 다시 안올라오려나?");
-			System.out.println("미치겟네");
-			System.out.println("그만하자...");
+			System.out.println("새마음 새출발");
+			System.out.println("깃이닛은 못없애나");
 			System.out.println("몇 줄짜리 별를 만들까요?(5이상 홀수만 가능 짝수나 4이하 입력 금지)");
 			int a = sc.nextInt();
 			int ms = (a + 1) / 2;

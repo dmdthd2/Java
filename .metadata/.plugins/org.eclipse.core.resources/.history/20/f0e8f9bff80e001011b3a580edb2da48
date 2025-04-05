@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Star05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("몇 줄짜리 십자가를 만들까요?");
+        int a = sc.nextInt();
+        
+        int mid = a / 2;  // 십자가의 중앙 인덱스 계산 (중간 줄과 열)
+
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < a; j++) {
+                if (i == mid) {
+                    // 중간 줄에서는 가로줄에 별을 a개 출력
+                    System.out.print("*");
+                } else if (j == mid) {
+                    // 세로줄 중간에 별을 찍음
+                    System.out.print("*");
+                } else if (i > mid) {
+                    // 중간 이후로 별들이 양쪽으로 갈라짐
+                    if (j == mid - (i - mid) || j == mid + (i - mid)) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                } else {
+                    // 중간 전까지는 공백만 출력
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();  // 한 줄이 끝나면 줄 바꿈
+        }
+    }
+}

@@ -1,0 +1,88 @@
+import java.util.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		int x = 50;
+//		int y = 50;
+//		
+//		/**if(x<y) {
+//			System.out.println("x는 y보다 작습니다");
+//			System.out.println("test");
+//			
+//		}
+//		if(x<y) {
+//			System.out.println("x는 y와 같습니다");
+//		System.out.println("test");
+//		}
+//		
+//		
+//		if(x==y) {
+//			System.out.println("x와y가 같습니다!@!");
+//		
+//		}
+//		else if(x>y) {
+//			System.out.println("x가 더 크네요");
+//		}
+//		else if(x<y) {
+//			System.out.println("y가 더 크네요");
+//		}
+//		else {
+//			System.out.println("x랑 y는 달라요;;");
+//		}
+//		
+//		
+		int v = 1;
+		switch(v){
+		case 1:
+		System.out.println("1");
+		break;
+		case 23:
+			System.out.println("2");
+			break;
+		case 3:
+			System.out.println("3");
+			break;
+		default:
+			System.out.println("아님");
+		}
+		String str = "안녕";
+		switch(str){
+		case "안녕":
+		System.out.println("ㅎㅇ");
+		break;
+		}
+		int a = 1;
+		Scanner scan = new Scanner(System.in);
+		do {
+			a = scan.nextInt();
+			System.out.println("입력한 숫자:"+a);
+			
+		}while(a !=10);
+		System.out.println("반복문 종료");
+
+		
+		
+		
+		
+		
+		  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,126 @@
+import java.util.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		int x = 50;
+//		int y = 50;
+//		
+//		/**if(x<y) {
+//			System.out.println("x는 y보다 작습니다");
+//			System.out.println("test");
+//			
+//		}
+//		if(x<y) {
+//			System.out.println("x는 y와 같습니다");
+//		System.out.println("test");
+//		}
+//		
+//		
+//		if(x==y) {
+//			System.out.println("x와y가 같습니다!@!");
+//		
+//		}
+//		else if(x>y) {
+//			System.out.println("x가 더 크네요");
+//		}
+//		else if(x<y) {
+//			System.out.println("y가 더 크네요");
+//		}
+//		else {
+//			System.out.println("x랑 y는 달라요;;");
+//		}
+//		
+//		
+//		int v = 4;
+//		switch(v){
+//		case 1:
+//		System.out.println("1");
+//		break;
+//		case 23:
+//			System.out.println("2");
+//			break;
+//		case 3:
+//			System.out.println("3");
+//			break;
+//		default:
+//			System.out.println("아님");
+//		}
+//		String str = "안녕";
+//		switch(str){
+//		case "안녕":
+//		System.out.println("ㅎㅇ");
+//		break;
+//		}
+//		int a = 1;
+//		Scanner scan = new Scanner(System.in);
+//		do {
+//			a = scan.nextInt();
+//			System.out.println("입력한 숫자:"+a);
+//			
+//		}while(a !=10);
+//		System.out.println("반복문 종료");
+
+		
+//		
+//		Date date = new Date();
+//		int h = date.getHours();
+//		int y = date.getYear()+1900;
+//		int m = date.getMonth()+1;
+//		int d = date.getDate();
+//		
+//		
+//		System.out.println("오늘의 날짜는 "+y+"년 "+m+"월 "+d+"일"+"입니다");
+		
+		
+		  
+		
+//		array[0]=1;
+//		array[1]=2;
+//		array[2]=3;
+//		array[3]=4;
+//		array[4]=5;
+//		array[5]=6;
+//		array[6]=7;
+//		array[7]=8;
+//		array[8]=9;
+//		array[9]=10;
+//		int sum = 0;
+//		int[] array= new int[10];
+//        for(int i = 0; i<array.length; i++){
+//            array[i]= i+1;
+//        }
+//        for(int i = 0; i<array.length; i++){
+//            sum=array[i]+sum;
+//            
+//        
+//        }
+//        System.out.println(sum);
+		
+		int num;
+		Random rn = new Random();
+		num= rn.nextInt(10)+1;
+		
+		for(int i=0; i<num; i++) {
+			System.out.print(num+": ");
+		}
+			for(int j =0; j<num; j++) {
+				System.out.print("*");
+				
+			}
+			System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

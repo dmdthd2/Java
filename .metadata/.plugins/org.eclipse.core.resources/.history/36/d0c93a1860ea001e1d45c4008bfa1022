@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class 로또번호 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rnd =new Random();
+        System.out.println("로번출");
+        int num;
+        int sum=0;
+        
+        for(int i=0; i<10; i++) {
+           System.out.print("로또"+(i+1)+" : ");
+           for(int j=0;j<6; j++) {
+              System.out.print(rnd.nextInt(45)+1 + " ");
+              
+           }
+           System.out.println();
+        }
+	}
+
+}

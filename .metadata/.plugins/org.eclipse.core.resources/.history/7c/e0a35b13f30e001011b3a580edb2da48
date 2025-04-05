@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Star05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("몇줄짜리 별을 만들까요?");
+        int a= sc.nextInt();
+        int ms =(a+1)/2;
+        
+        for (int i = 1; i <= a; i++) {
+            // 왼쪽 공백 출력
+            for (int j = 1; j <= i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // 중간에 별 출력
+            if (i < ms) {
+                System.out.print("*");
+            } else if (i == ms) {
+                // 중간 줄에 별을 여러 개 찍음
+                for (int k = 1; k <= a; k++) {
+                    System.out.print("*");
+                }
+            } else {
+                // 중간 이후 줄에서는 별을 한 개만 찍음
+                System.out.print("*");
+            }
+
+            // 줄 바꿈
+            System.out.println();
+        
+    }
+}
+}

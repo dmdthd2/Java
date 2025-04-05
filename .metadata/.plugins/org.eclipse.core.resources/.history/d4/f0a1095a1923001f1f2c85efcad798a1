@@ -1,0 +1,18 @@
+package Practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExam {
+
+	public static void main(String[] args) {
+		List<String> l =new ArrayList<>();
+		l.add("김");
+		l.add("강");
+		l.add("김");
+		
+		System.out.println(l.size());
+
+	}
+
+}

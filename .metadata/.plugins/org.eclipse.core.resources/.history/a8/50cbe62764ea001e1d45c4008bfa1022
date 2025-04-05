@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		Random rnd = new Random();
+		int n;
+		n= rnd.nextInt(101);
+		
+		for(int i =0; i<n; i++) {
+			System.out.println(n);
+		}
+		
+		
+
+
+		
+		
+		
+		
+		
+		  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

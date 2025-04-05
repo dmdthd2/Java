@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class HelloJava {
+	public static void main(String[] args) {
+		
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("입력하라");
+		int a = sc.nextInt();
+		Random rn = new Random();
+		int[] ar = new int[a];
+		int min=ar[0];
+		for(int i=0; i<=a; i++) {
+			int b= rn.nextInt(a);
+			if(min>ar[i]) {
+				min+=ar[i];
+			}
+			
+				
+			
+		}
+		System.out.println("최솟값은 "+min);
+		
+		
+	}
+
+}
