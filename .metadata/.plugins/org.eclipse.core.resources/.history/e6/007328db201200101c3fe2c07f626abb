@@ -11,7 +11,6 @@ public class Star05 {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("새마음 새출발");
 			System.out.println("깃이닛은 못없애나");
-			System.out.println("메타데이터가 생겨버렷다 비상~~");
 			System.out.println("몇 줄짜리 별를 만들까요?(5이상 홀수만 가능 짝수나 4이하 입력 금지)");
 			int a = sc.nextInt();
 			int ms = (a + 1) / 2;
