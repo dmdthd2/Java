@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Welcome {
-   static final int Num_Book =5;
+   static final int Num_Book =6;
    static final int Num_Item =7;
    
    public static void main(String[] args) {
@@ -186,6 +186,13 @@ public class Welcome {
       book[4][4]="여자에게 말도 못걸어본 자들을 위한 S급 비법서";
       book[4][5]="기타도서";
       book[4][6]="2025/04/28 발매예정";
+      book[5][0]="ISBN1239";
+      book[5][1]="홍영준을 긁는 100가지 방법";
+      book[5][2]="1";
+      book[5][3]="김은송3";
+      book[5][4]="홍영진을 긁을 수 있는 비법";
+      book[5][5]="기타도서";
+      book[5][6]="2025/04/? 조만간 발매예정";
       
       
       
