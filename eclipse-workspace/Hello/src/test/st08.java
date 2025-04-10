@@ -1,7 +1,7 @@
 package test;
 
 public class st08 {
-	public static void meth(int a, int b) {//void는 밑에 필요없음
+	public static void meth(int a, int b) {//void는 밑에 필요없음 (syso말하는 거임)
 		System.out.println(a+b);
 		
 	}
