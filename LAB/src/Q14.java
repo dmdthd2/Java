@@ -1,13 +1,13 @@
 
 public class Q14 {
-    public static void main(String[] args) {
-        
-        
+
+   public static void main(String[] args) {
+      
         for (int i = 0; i < 5; i++) {
-           for (char ch = (char)('A' + i); ch < 'A' + i + 5; ch++) {
-                System.out.print(ch);  
+            for (int j = 0; j < 10; j++) {
+                System.out.print((char) ('A'+ j + i));
             }
-            System.out.println(); 
+            System.out.println();
         }
-    }
+   }
 }
