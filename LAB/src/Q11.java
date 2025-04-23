@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Q11 {
@@ -6,7 +5,7 @@ public class Q11 {
         Scanner sc = new Scanner(System.in);
         int s;
 
-       
+        
         while (true) {
             System.out.print("별 개수를 입력하세요: ");
             s = sc.nextInt();
