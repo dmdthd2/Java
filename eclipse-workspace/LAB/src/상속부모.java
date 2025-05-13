@@ -1,5 +1,5 @@
 
-public class 상속애미 {
+public class 상속부모 {
 
 	public static void 지랄() {
 		System.out.println("시간이 몇시냐");
