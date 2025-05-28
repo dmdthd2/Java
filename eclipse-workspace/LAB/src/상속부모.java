@@ -1,7 +1,7 @@
 
 public class 상속부모 {
 
-	public static void 지랄() {
+	public static void ㅎㅎ() {
 		System.out.println("시간이 몇시냐");
 
 	}
