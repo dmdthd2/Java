@@ -35,7 +35,7 @@ public static boolean meth(double x, double y) {
 		System.out.println(meth(2.5,3));
 		System.out.println(meth(2,3.5));
 		System.out.println(meth(2.0,3.0));
-		
+		System.out.println("김명준 개병신");
 
 	}
 
