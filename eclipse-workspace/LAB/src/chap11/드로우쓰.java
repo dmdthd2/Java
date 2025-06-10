@@ -14,7 +14,7 @@ public class 드로우쓰 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("숫자입력");
+		System.out.println("0보다 큰 숫자입력");
 		int num = sc.nextInt();
 		try {
 			check(num);

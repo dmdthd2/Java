@@ -6,6 +6,9 @@ public class 다중예외 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		boolean t =true;
+		while(t) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자 입력");
 		int num =sc.nextInt()	;
@@ -15,6 +18,7 @@ public class 다중예외 {
 		try {
 			arr[num]=10/num;
 			System.out.println(arr[num]);
+			t=false;
 		}catch(ArithmeticException e) {
 			System.out.println("0이 아닌 걸로");
 			System.out.println(e.getMessage());
@@ -25,7 +29,9 @@ public class 다중예외 {
 			e.printStackTrace();
 			
 		}finally {
-			System.out.println("그냥 되는 거야~");
+			System.out.println("이건 그냥 되는 거야~");
+		}
+		
 		}
 	}
 
