@@ -1,0 +1,93 @@
+
+text
+[패키지명] java.lang
+- Object
+  - toString()
+  - equals(Object obj)
+  - hashCode()
+- String
+  - length()
+  - charAt(int index)
+  - compareTo(String anotherString)
+  - split(String regex)
+- StringBuffer
+  - append(String str)
+  - insert(int offset, String str)
+  - reverse()
+- StringBuilder
+  - append(String str)
+  - insert(int offset, String str)
+  - reverse()
+- Math
+  - random()
+  - abs(int a)
+  - round(double a)
+  - sqrt(double a)
+- Wrapper 클래스 (Integer, Double, Boolean 등)
+  - intValue()
+  - valueOf(String s)
+  - toString()
+
+[예시]
+String str = "Hello";
+System.out.println(str.length()); // 5
+System.out.println(Math.random()); // 0.0 ~ 1.0 사이 랜덤값
+
+Integer num = Integer.valueOf("123");
+System.out.println(num); // 123
+
+StringBuffer sb = new StringBuffer("abc");
+sb.append("def");
+System.out.println(sb); // abcdef
+
+StringBuilder sb2 = new StringBuilder("xyz");
+sb2.insert(1, "123");
+System.out.println(sb2); // x123yz
+
+[패키지명] java.util
+- Date
+  - after(Date when)
+  - before(Date when)
+- Calendar
+  - getInstance()
+  - get(int field)
+  - add(int field, int amount)
+  - getTime()
+- StringTokenizer
+  - hasMoreTokens()
+  - nextToken()
+- Random
+  - nextInt()
+  - nextInt(int bound)
+
+[예시]
+Date date = new Date();
+System.out.println(date); // 현재 날짜/시간 출력
+
+Calendar cal = Calendar.getInstance();
+System.out.println(cal.get(Calendar.YEAR)); // 현재 연도 출력
+
+StringTokenizer st = new StringTokenizer("Java,C,Python", ",");
+while(st.hasMoreTokens()) {
+    System.out.println(st.nextToken());
+}
+// 출력: Java
+//      C
+//      Python
+
+Random rand = new Random();
+System.out.println(rand.nextInt(100)); // 0~99 사이 랜덤값
+
+[패키지명] java.text
+- DateFormat
+  - getInstance()
+  - getDateInstance()
+  - format(Date date)
+- SimpleDateFormat
+  - SimpleDateFormat(String pattern)
+  - format(Date date)
+  - parse(String source)
+
+[예시]
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+System.out.println(sdf.format(new Date())); // 오늘 날짜 yyyy-MM-dd 형식 출력
